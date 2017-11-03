@@ -7,7 +7,8 @@ from ESinterface import *
 
 class Logtest(Interface):
     def __init__(self):
-        Interface.__init__(self, 'summary')
+        #Interface.__init__(self, 'summary')
+        super(Logtest, self).__init__('summary')
 
     def onTest(self):
         
